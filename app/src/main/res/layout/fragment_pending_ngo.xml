@@ -1,0 +1,255 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="comman1.PendingNgo">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/dish_img"
+                android:layout_width="126dp"
+                android:layout_height="147dp"
+                android:layout_marginStart="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="248dp"
+                android:layout_height="35dp"
+                android:text="Paneer Palak,Roti"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no_people"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/no_people"
+                android:layout_width="242dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="11dp"
+                android:text="Food for 21 peoples"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintStart_toEndOf="@+id/dish_img"
+                app:layout_constraintTop_toBottomOf="@+id/heading" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="240dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="2dp"
+                android:text="Cooking Time : 11.30"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dish_img"
+                app:layout_constraintTop_toBottomOf="@+id/no_people" />
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_width="242dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="36dp"
+                android:text="Location :Dombivli"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/dish_img"
+                app:layout_constraintTop_toBottomOf="@+id/no_people" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/dish_img2"
+                android:layout_width="126dp"
+                android:layout_height="147dp"
+                android:layout_marginStart="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="248dp"
+                android:layout_height="35dp"
+                android:text="Paneer Palak,Roti"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no_people2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/no_people2"
+                android:layout_width="242dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="11dp"
+                android:text="Food for 21 peoples"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintStart_toEndOf="@+id/dish_img2"
+                app:layout_constraintTop_toBottomOf="@+id/heading2" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="240dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="2dp"
+                android:text="Cooking Time : 11.30"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.341"
+                app:layout_constraintStart_toEndOf="@+id/dish_img2"
+                app:layout_constraintTop_toBottomOf="@+id/no_people2" />
+
+            <TextView
+                android:id="@+id/loc2"
+                android:layout_width="242dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="36dp"
+                android:text="Location :Dombivli"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dish_img2"
+                app:layout_constraintTop_toBottomOf="@+id/no_people2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp">
+
+
+            <ImageView
+                android:id="@+id/dish_img3"
+                android:layout_width="126dp"
+                android:layout_height="147dp"
+                android:layout_marginStart="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="248dp"
+                android:layout_height="35dp"
+                android:text="Paneer Palak,Roti"
+                android:textSize="29sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/no_people3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/no_people3"
+                android:layout_width="242dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="11dp"
+                android:text="Food for 21 peoples"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.238"
+                app:layout_constraintStart_toEndOf="@+id/dish_img3"
+                app:layout_constraintTop_toBottomOf="@+id/heading3" />
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="240dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="2dp"
+                android:text="Cooking Time : 11.30"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.341"
+                app:layout_constraintStart_toEndOf="@+id/dish_img3"
+                app:layout_constraintTop_toBottomOf="@+id/no_people3" />
+
+            <TextView
+                android:id="@+id/loc3"
+                android:layout_width="242dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="36dp"
+                android:text="Location :Dombivli"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dish_img3"
+                app:layout_constraintTop_toBottomOf="@+id/no_people3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

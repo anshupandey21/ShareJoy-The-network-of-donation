@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_list">
+        <item> Private Sector Companies</item>
+        <item> Registered Societies(Non-Govt)</item>
+        <item> Trust(Non-Govt)</item>
+        <item> Other Registered Entities(Non-Govt)</item>
+        <item> Academic Institution(Private)</item>
+        <item> Academic Institution(Govt)</item>
+    </string-array>
+</resources>
